@@ -8,7 +8,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
   && apt-get install -y ca-certificates nginx=${NGINX_VERSION} gettext-base git libpng-dev \
   && rm -rf /var/lib/apt/lists/* \
   && ln -sf /dev/stdout /var/log/nginx/access.log \
-  && ln -sf /dev/stderr /var/log/nginx/error.log \
+  && ln -sf /dev/stderr /var/log/nginx/error.log
 
 EXPOSE 80
 
