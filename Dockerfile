@@ -19,7 +19,7 @@ COPY . /app/
 ENV APP_ENV=production
 ENV API_URL=https://127.0.0.1
 
-RUN cp -r dist/* /usr/share/nginx/html/ && \
+RUN cp -r ./* /usr/share/nginx/html/ && \
     rm -rf /app
 
 CMD nginx -g 'daemon off;'
