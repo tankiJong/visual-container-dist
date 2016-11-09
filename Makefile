@@ -1,5 +1,5 @@
 ui:
-	docker build -t daocloud.io/realityone/vg-ui .
+	docker build -t daocloud.io/alphabeta_com/vg-ui .
 
 release:
-	docker push daocloud.io/realityone/vg-ui
+	docker push daocloud.io/alphabeta_com/vg-ui
